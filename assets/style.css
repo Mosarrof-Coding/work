@@ -18,8 +18,12 @@ a{
     --white-color: #fff;
     --dark-color: #000;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 .container{
     max-width: 1140px;
@@ -28,13 +32,13 @@ body{
 .cmnBtn{
     display: inline-block;
     background: var(--secondary-color);
-    padding: 14px 38.5px;
+    padding: 1.4rem 3.85rem;
     border-radius: 30px;
     text-transform: capitalize;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 1.5;
     color:var(--white-color);
     transition: all linear .3s;
 }
@@ -46,7 +50,7 @@ body{
 
 /* header */
 header{
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 .header-wrapper{
     display: flex;
@@ -56,8 +60,8 @@ header{
 .logo{
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 65px;
+    font-size: 4.8rem;
+    line-height: 1.5;
     letter-spacing: 0.005em;
 }
 nav{
@@ -66,19 +70,18 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
-    gap:29px;
+    gap:2.9rem;
 
 }
 nav ul li{
-
+    padding: 2rem 0;
 }
 nav ul li a{
     text-transform: capitalize;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 135.5%;
-    /* or 27px */
     letter-spacing: 0.005em;
     transition: all linear .3s;
 }
@@ -88,11 +91,10 @@ nav ul li a:hover{
 
 /* about-- */
 .about{
-    padding: 190px 0 185px 0;
+    padding: 19rem 0 18.5rem 0;
 }
 .about-wrapper{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .about-wrapper > *{
@@ -105,34 +107,37 @@ nav ul li a:hover{
     position: relative;
 }
 .absolute{
+    display: inline-block;
     position: absolute;
-    left: -87px;
-    top: -93px;
-    width: 170px;
+    left: -10%;
+    top: -12%;
+    max-width: 20%;
+}
+.absolute img{
+    max-width: 100%;
 }
 .about-text h1{
-    max-width: 502px;
+    max-width: 80%;
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 65px;
+    font-size: 4.8rem;
+    line-height: 1.5;
     letter-spacing: 0.005em;
     color: #385F96;
 }
 .about-text p{
-    width: 478px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     text-align: justify;
     color: #4E4E4E;
-    padding: 30px 0;
+    padding: 3rem 0;
 }
 
 /* service */
 .service{
-    padding-bottom: 200px;
+    padding-bottom: 20rem;
 }
 .service-wrapper{
     display: flex;
@@ -148,7 +153,7 @@ nav ul li a:hover{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 135.5%;
     /* or 49px */
 
@@ -165,8 +170,8 @@ nav ul li a:hover{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     text-align: justify;
     color: #4E4E4E;
     padding: 29px 0;
@@ -178,7 +183,7 @@ nav ul li a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 112px 0;
+    padding: 11.12rem 0;
 }
 .contact-wrapper{
     display: flex;
@@ -189,21 +194,21 @@ nav ul li a:hover{
     flex-basis: 100%;
 }
 .contact-text h1{
-    max-width: 465px;
+    max-width: 70%;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 135.5%;
     letter-spacing: 0.005em;
     color: #385F96;
-    padding-bottom: 28px;
+    padding-bottom: 2.8rem;
 }
 .contact-img{
     text-align: right;
 }
 /* footer */
 footer{
-    padding: 26px 0;
+    padding: 2.6rem 0;
     background-color: var(--secondary-color);
     text-align: center;
 }
@@ -211,7 +216,140 @@ footer h6{
     text-transform: capitalize;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 1.5;
     color: var(--white-color);
+}
+/* ===Responsive==================== */
+@media (max-width: 1320x) {
+}
+@media (max-width: 1200px) {
+    .container{
+        padding: 0 2rem;
+    }
+    html{
+        font-size: 60%;
+    }
+    .cmnBtn{
+        padding: 1.2rem 2.8rem;
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        padding: 0 2rem;
+    }
+    html{
+        font-size: 55%;
+    }
+    .cmnBtn{
+        padding: 1rem 2.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .cmnBtn{
+        margin-bottom: 3rem;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+    html{
+        font-size: 50%;
+    }
+    .cmnBtn{
+        padding: 1rem 2.5rem;
+    }
+    /* headr------ */
+    .header-wrapper{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        gap:0rem !important;
+    }
+    /* about------- */
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .absolute{
+        left: -10%;
+        top: -15%;
+    }
+    /* service---- */
+    .service-wrapper{
+        flex-direction: column;
+    }
+    /* contact------ */
+    .contact-wrapper{
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        padding: 0 2rem;
+    }
+    html{
+        font-size: 45%;
+    }
+    .cmnBtn{
+        padding: .8rem 2.5rem;
+    }
+    /* headr------ */
+    .header-wrapper{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        gap:0rem !important;
+    }
+    /* about------- */
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .absolute{
+        left: -10%;
+        top: -15%;
+    }
+    /* service---- */
+    .service-wrapper{
+        flex-direction: column;
+    }
+    /* contact------ */
+    .contact-wrapper{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .container{
+        padding: 0 2rem;
+    }
+    html{
+        font-size: 40%;
+    }
+    .cmnBtn{
+        padding: .6rem 2.5rem;
+    }
+    /* headr------ */
+    .header-wrapper{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        gap:0rem !important;
+    }
+    /* about------- */
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .absolute{
+        left: -10%;
+        top: -15%;
+    }
+    /* service---- */
+    .service-wrapper{
+        flex-direction: column;
+    }
+    /* contact------ */
+    .contact-wrapper{
+        flex-direction: column;
+    }
 }
